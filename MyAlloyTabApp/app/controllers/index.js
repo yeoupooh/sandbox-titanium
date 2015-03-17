@@ -1,11 +1,26 @@
 $.index.open();
 
+var http = require('http');
+
 function onClickButton1(e) {
 	Titanium.API.info("You clicked the button");
 };
 
 function onClickButton2(e) {
 	Titanium.API.info("Test2");
+
+	Ti.API.info('http=' + http);
+
+	http.openUrl("http://www.appcelerator.com", {
+		onload : function(httpclient, e) {
+			Ti.API.info("Received text: " + httpclient.responseText);
+			alert('success');
+		},
+		onerror : function(e) {
+			Ti.API.debug(e.error);
+			alert('error');
+		}
+	});
 };
 
 var elementData = [{
@@ -49,5 +64,5 @@ function onItemClickList1(e) {
 	section.updateItemAt(e.itemIndex, item);
 
 	// FIXME for testing
-	eval(item.properties.title);
+	// eval(item.properties.title);
 }
