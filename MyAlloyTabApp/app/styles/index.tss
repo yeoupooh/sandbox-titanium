@@ -1,6 +1,6 @@
 ".container": {
-	backgroundColor:"white",
-	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT]
+	backgroundColor: "white",
+	orientationModes: []
 },
 "Label": {
 	width: Ti.UI.SIZE,
@@ -18,7 +18,7 @@
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
 	backgroundColor: "#2c323f",
-	left: 0	
+	left: 0
 },
 "#iconBar":{
 	backgroundColor: "#4f6ba6",
@@ -33,12 +33,12 @@
 "#blackLine":{
 	backgroundColor: "#000",
 	width: Ti.UI.FILL,
-	height: "1dp"	
+	height: "1dp"
 },
 "#grayLine":{
 	backgroundColor: "#9b9d9f",
 	width: Ti.UI.FILL,
-	height: "1dp"	
+	height: "1dp"
 },
 "#mainList":{
 	backgroundColor: "#c4cde0",
@@ -61,18 +61,18 @@
 	backgroundColor: "#fff"
 },
 "#profilePic":{
-	 width:"66",
-	 height:"66",
-	 image:"profilepic.png",
-	 top:"5",
-	 left:"5"
+	width: "66",
+	height: "66",
+	image: "profilepic.png",
+	top: "5",
+	left: "5"
 },
 "#profileName":{
 	top: "5dp",
 	left: "80dp",
 	color: "#576b95",
 	font: {
-		fontSize : "16dp",
+		fontSize: "16dp",
 		fontWeight: "bold"
 	}
 },
@@ -81,7 +81,7 @@
 	left: "80dp",
 	color: "#bbbbbb",
 	font: {
-		fontSize : "16dp"
+		fontSize: "16dp"
 	}
 },
 "#status":{
@@ -89,7 +89,7 @@
 	left: 5,
 	right: 5,
 	font: {
-		fontSize : "16dp"
+		fontSize: "16dp"
 	}
 },
 "#bottomActions":{
