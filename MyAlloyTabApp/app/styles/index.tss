@@ -1,14 +1,100 @@
-"Window": {
-	backgroundColor: "#fff"
-}
-
+".container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT]
+},
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "#000",
+	color: "#000"
+},
+"#main":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#c4cde0",
+	left: 0,
+	layout: "vertical"
+},
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#2c323f",
+	left: 0	
+},
+"#iconBar":{
+	backgroundColor: "#4f6ba6",
+	width: Ti.UI.FILL,
+	height: "50dp"
+},
+"#menuBar":{
+	backgroundColor: "#f3f5f8",
+	width: Ti.UI.FILL,
+	height: "50dp"
+},
+"#blackLine":{
+	backgroundColor: "#000",
+	width: Ti.UI.FILL,
+	height: "1dp"	
+},
+"#grayLine":{
+	backgroundColor: "#9b9d9f",
+	width: Ti.UI.FILL,
+	height: "1dp"	
+},
+"#mainList":{
+	backgroundColor: "#c4cde0",
+	separatorStyle: "NONE"
+},
+"#listRow":{
+	height: "200dp",
+	selectionStyle: "NONE"
+},
+"#rowContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 5,
+	borderWidth: 1,
+	left: "5dp",
+	right: "5dp",
+	top: "5dp",
+	bottom: "5dp",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff"
+},
+"#profilePic":{
+	 width:"66",
+	 height:"66",
+	 image:"profilepic.png",
+	 top:"5",
+	 left:"5"
+},
+"#profileName":{
+	top: "5dp",
+	left: "80dp",
+	color: "#576b95",
 	font: {
-		fontSize: 20,
-		fontFamily: 'Helvetica Neue'
-	},
-	textAlign: 'center'
-} 
+		fontSize : "16dp",
+		fontWeight: "bold"
+	}
+},
+"#timeAgo":{
+	top: "25dp",
+	left: "80dp",
+	color: "#bbbbbb",
+	font: {
+		fontSize : "16dp"
+	}
+},
+"#status":{
+	width: Ti.UI.SIZE,
+	left: 5,
+	right: 5,
+	font: {
+		fontSize : "16dp"
+	}
+},
+"#bottomActions":{
+	bottom: 0,
+	height: "45dp",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5"
+}
